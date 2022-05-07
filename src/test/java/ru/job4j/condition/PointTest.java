@@ -17,24 +17,24 @@ public class PointTest {
     }
 
     @Test
-    public void How() {
+    public void when20to40then2() {
         double expected = 2;
         int x1 = 2;
         int y1 = 0;
         int x2 = 4;
         int y2 = 0;
-        double out = Point.disco(x1, y1, x2, y2);
+        double out = Point.distance1(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void How1() {
+    public void when40to60then2() {
         double expected = 2;
         int x1 = 4;
         int y1 = 0;
         int x2 = 6;
         int y2 = 0;
-        double out = Point.trel(x1, y1, x2, y2);
+        double out = Point.distance2(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
 
     }
