@@ -9,24 +9,20 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
-        public static double FlightPlusEvent(double first, double second) {
-            return flight(first, second)
-                    + event(first, second);
-
+        public static double substractionPlusDivision(double first, double second) {
+            return subtraction(first, second)
+                    + division(first, second);
         }
 
-    public static double allsumma(double first, double second) {
-        double v = flight(first, second);
-        double f = FlightPlusEvent(first, second);
-        double s = multiply(first, second);
-        double r = event(first, second);
-        return v + f + s + r;
+            public static double allsumma(double first, double second) {
+                return sumAndMultiply(first, second)
+                        + substractionPlusDivision(first, second);
+            }
 
-    }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат сложения деления и суммы равен: " + FlightPlusEvent(10, 20));
+        System.out.println("Результат сложения деления и суммы равен: " + substractionPlusDivision(10, 20));
         System.out.println("Результат сложения всех методов в классе Маф Функтион равен: " + allsumma(10, 20));
     }
 }
