@@ -28,7 +28,7 @@ public void  whenA0B1C1X1Then2() {
         }
 
 @Test
-public void  whenA1B1C0X1Then2() {
+public void  whenA1B1C0X1Then2()  {
         int a = 1;
         int b = 1;
         int c = 0;
