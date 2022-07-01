@@ -1,15 +1,20 @@
 package ru.job4j.calculator;
 
-import ru.job4j.math.MathFunction;
-
 public class Testik {
+public static double manWeight(short height) {
+        double rsl = (height - 100) * 1.15;
+        return rsl;
+        }
 
-    public static double sumAndMultiply(double first, double second) {
-        return MathFunction.sum(first, second)
-                + MathFunction.multiply(first, second);
-    }
+public static double womanWeight(short height) {
+    double rsl = (height - 110) * 1.15;
+        return rsl;
+        }
 
-    public static void main(String[] args) {
-        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-    }
+public static void main(String[] args) {
+        short height = 187;
+        double man = Fit.manWeight(height);
+        System.out.println("Man 187 is " + man);
+        }
+
 }
