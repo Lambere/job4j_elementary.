@@ -1,15 +1,16 @@
 package ru.job4j.condition;
 
 public class SqArea {
-    public static double square(int p, double k) {
-        double h = p / (2 * (k + 1));
-        double rsl = h * k  * h;
-        return rsl;
-    }
-
-    public static void main(String[] args) {
-        double result1 = SqArea.square(6, 2);
-        System.out.println(" p = 6, k = 2, s = 2, real = " + result1);
-
+    public void main(String[]arg){
+        double Maikle = 57.5;
+        if(Maikle >= 60){
+            System.out.print("You a stuped little boy!");
+        }
+        if(Maikle <= 60){
+            System.out.print("You are done.");
+        }
+        {
+        }
+        System.out.print("g");
     }
 }
