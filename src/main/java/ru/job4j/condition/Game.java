@@ -14,9 +14,6 @@ public class Game {
     }
 
     public static void main(String[] args) {
-        Game.menu("super mario");
         Game.menu("tanks");
-        Game.menu("tetris");
-
     }
 }
