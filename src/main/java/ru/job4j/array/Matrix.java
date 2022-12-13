@@ -7,7 +7,7 @@ public class Matrix {
                 siz[cell][index] = (index + 1) * (cell + 1);
              }
          }
-        return siz;
+         return siz;
     }
 
 }
