@@ -4,7 +4,7 @@ public class SwitchWeek {
     public static String nameOfDay(int day) {
         String name;
         switch (day) {
-            case 1 :
+            case 1:
                 name = "Понедельник";
                 break;
             case 2:
@@ -13,7 +13,7 @@ public class SwitchWeek {
             case 3:
                 name = "Среда";
                 break;
-            case 4 :
+            case 4:
                 name = "Четверг";
                 break;
             case 5:
