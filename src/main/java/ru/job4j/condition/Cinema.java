@@ -9,6 +9,7 @@ public class Cinema {
             System.out.println("You can't watch this movie");
         }
     }
+
     public static void main(String[]args) {
         Cinema.access(10);
         Cinema.access(99);

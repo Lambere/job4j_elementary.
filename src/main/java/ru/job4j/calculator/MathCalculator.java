@@ -19,7 +19,6 @@ public class MathCalculator {
                         + substractionPlusDivision(first, second);
             }
 
-
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Результат сложения деления и суммы равен: " + substractionPlusDivision(10, 20));

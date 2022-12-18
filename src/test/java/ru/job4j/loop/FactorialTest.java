@@ -3,7 +3,6 @@ package ru.job4j.loop;
 import org.junit.jupiter.api.Test;
 import org.junit.Assert;
 
-
 public class FactorialTest {
 
     @Test
@@ -13,7 +12,6 @@ public class FactorialTest {
         int expected = 120;
         Assert.assertEquals(expected, result);
     }
-
 
     @Test
     public void whenCalculateFactorialForZeroThenOne() {

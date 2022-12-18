@@ -20,7 +20,7 @@ public class SwitchArrayTest {
         int source = 0;
         int dest = input.length - 1;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {7, 2, 3, 4, 5 , 6, 1};
+        int[] expected = {7, 2, 3, 4, 5, 6, 1};
         assertThat(result).containsExactly(expected);
     }
 }
