@@ -4,9 +4,8 @@ public class Slash {
     public static void draw(int size) {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                boolean left = (cell == row);
                 boolean right = (cell + row == size - 1);
-                if (left) {
+                if (cell == row) {
                     System.out.print("0");
                 } else if (right) {
                     System.out.print("0");
@@ -20,9 +19,9 @@ public class Slash {
     }
 
     public static void main(String[] args) {
-                System.out.println("Draw by 13");
-                draw(13);
-                System.out.println("Draw by 12");
-                draw(12);
+                System.out.println("Draw by 3");
+                draw(3);
+                System.out.println("Draw by 5");
+                draw(5);
   }
 }
