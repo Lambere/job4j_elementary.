@@ -14,7 +14,7 @@ public class MatrixCheck {
 
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
-        for (int i = 0; i <= column; i++) {
+        for (int i = 0; i <= board.length; i++) {
             for (int r = 0; r <= board.length; r++) {
                 if (board[i][column] != 'X') {
                     result = false;
@@ -23,5 +23,13 @@ public class MatrixCheck {
             }
         }
         return result;
+    }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            rsl[i] = board[i][i];
+        }
+        return rsl;
     }
 }
