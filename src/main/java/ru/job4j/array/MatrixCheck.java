@@ -5,9 +5,9 @@ public class MatrixCheck {
 
         boolean result = true;
         for (int cell = 0; cell < board.length; cell++) {
-            if (board[row][2] != 'X')
+            if (board[row][2] != 'X') {
                 return false;
-
+            }
             if (board[row][cell] != 'X') {
                 return false;
             }
@@ -18,10 +18,11 @@ public class MatrixCheck {
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (int i = 0; i < board.length; i++) {
-            if (board[i][2] != 'X')
+            if (board[i][2] != 'X') {
                 return false;
+            }
             if (board[i][column] != 'X') {
-                    return false;
+                return false;
             }
         }
         return result;
@@ -42,8 +43,6 @@ public class MatrixCheck {
                     result = true;
                     break;
                 }
-
-
         }
         return result;
     }
