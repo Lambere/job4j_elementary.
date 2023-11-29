@@ -4,9 +4,11 @@ public class MatrixCheck {
     public static boolean monoHorizontal(char[][] board, int row) {
         boolean result = true;
         for (int cell = 0; cell < board.length; cell++) {
+            if (board[row][2] != 'X')
+                return false;
+
             if (board[row][cell] != 'X') {
-                result = false;
-                break;
+                return false;
             }
         }
         return result;
@@ -15,10 +17,11 @@ public class MatrixCheck {
     public static boolean monoVertical(char[][] board, int column) {
         boolean result = true;
         for (int i = 0; i < board.length; i++) {
-                if (board[i][column] != 'X') {
-                    result = false;
-                    break;
-                }
+            if (board[i][2] != 'X')
+                return false;
+            if (board[i][column] != 'X') {
+                    return false;
+            }
         }
         return result;
     }
@@ -34,12 +37,11 @@ public class MatrixCheck {
     public static boolean isWin(char[][] board) {
         boolean result = false;
         for (int i = 0; i < board.length - 1; i++) {
-            for (int a = 0; a < board.length - 1; a++) {
-                if (monoHorizontal(board, i) || monoVertical(board, i)) {
+            if (monoHorizontal(board, i) || monoVertical(board, i)) {
                     result = true;
                     break;
                 }
-            }
+
 
         }
         return result;
