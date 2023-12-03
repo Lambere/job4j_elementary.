@@ -7,11 +7,11 @@ public class TwoNumberSum {
                 break;
             }
             for (int j = i + 1; array.length >= j; j++) {
-                if(j == array.length) {
+                if (j == array.length) {
                     break;
                 }
                 if (array[i] + array[j] == target) {
-                    return new int[]{i,j};
+                    return new int[] {i,j};
                 }
             }
         }
