@@ -11,7 +11,7 @@ public class TwoNumberSum {
                     break;
                 }
                 if (array[i] + array[j] == target) {
-                    int[] array1 = new int[] {i,j};
+                    int[] array1 = new int[] {i, j};
                     return  array1;
                 }
             }
