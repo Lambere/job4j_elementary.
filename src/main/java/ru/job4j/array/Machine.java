@@ -16,7 +16,6 @@ import java.util.Arrays;
                     j++;
                     size++;
                 } else {i++;}
-
             }
             return Arrays.copyOf(rsl, size);
         }
