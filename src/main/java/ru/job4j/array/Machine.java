@@ -11,12 +11,14 @@ import java.util.Arrays;
             int j = 0;
             int totalMoney = money - price;
             while (totalMoney != 0 && i <= coins.length - 1) {
-                if(totalMoney >= coins[i]) {
+                if (totalMoney >= coins[i]) {
                     totalMoney -= coins[i];
                     rsl[j] = coins[i];
                     j++;
                     size++;
-                } else {i++;}
+                } else {
+                    i++;
+                }
             }
             return Arrays.copyOf(rsl, size);
         }
